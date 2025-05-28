@@ -3,68 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GEOZAP - Servicios de Topografía</title>
+  <title>GEOZAP - Servicios Profesionales de Topografía</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="GEOZAP ofrece servicios profesionales de topografía con tecnología avanzada y precisión garantizada." />
 </head>
 <body>
-  <header>
+  <header role="banner" id="header">
     <div class="container header-flex">
-      <img src="Logo/Logogeo.png" alt="Logo GEOZAP" class="logo-img" />
-      <nav>
-        <a href="index.html" class="active">Inicio</a>
+      <a href="index.html" aria-label="GEOZAP Inicio">
+        <img src="Logo/Logogeo.png" alt="Logo GEOZAP" class="logo-img" />
+      </a>
+      <nav role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="active" aria-current="page">Inicio</a>
         <a href="servicios.html">Servicios</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <section class="banner">
-    <div class="container banner-content">
-      <h1>Precisión y Tecnología para tu Proyecto</h1>
-      <p>GEOZAP ofrece servicios topográficos confiables y avanzados para asegurar el éxito de tu obra.</p>
-      <a href="servicios.html" class="btn">Conoce nuestros servicios</a>
+  <main>
+    <section class="banner" role="region" aria-label="Presentación de GEOZAP">
+      <div class="container banner-content">
+        <h1>Precisión y Tecnología para Proyectos Exitosos</h1>
+        <p>Soluciones topográficas avanzadas y confiables que impulsan tu obra al siguiente nivel.</p>
+        <a href="servicios.html" class="btn" role="button">Descubre nuestros servicios</a>
+      </div>
+    </section>
+
+    <section class="container ventajas" role="region" aria-label="Ventajas de GEOZAP">
+      <h2>¿Por qué elegir GEOZAP?</h2>
+      <div class="ventajas-grid">
+        <article class="ventaja" tabindex="0" aria-labelledby="ventaja1-title" aria-describedby="ventaja1-desc">
+          <svg aria-hidden="true" class="ventaja-icon" viewBox="0 0 64 64" fill="#00cc44" xmlns="http://www.w3.org/2000/svg"><path d="M32 2C15.43 2 2 15.43 2 32s13.43 30 30 30 30-13.43 30-30S48.57 2 32 2zm0 56c-14.36 0-26-11.64-26-26S17.64 6 32 6s26 11.64 26 26-11.64 26-26 26z"/><path d="M32 14a18 18 0 1018 18A18.021 18.021 0 0032 14zm0 32a14 14 0 1114-14 14.015 14.015 0 01-14 14z"/></svg>
+          <h3 id="ventaja1-title">Alta Precisión</h3>
+          <p id="ventaja1-desc">Equipos de última generación y técnicos especializados para resultados exactos.</p>
+        </article>
+        <article class="ventaja" tabindex="0" aria-labelledby="ventaja2-title" aria-describedby="ventaja2-desc">
+          <svg aria-hidden="true" class="ventaja-icon" viewBox="0 0 64 64" fill="#00cc44" xmlns="http://www.w3.org/2000/svg"><path d="M52 10H12a4 4 0 00-4 4v26a4 4 0 004 4h9v4h14v-4h9a4 4 0 004-4V14a4 4 0 00-4-4zM12 40V14h40v26z"/></svg>
+          <h3 id="ventaja2-title">Tecnología Avanzada</h3>
+          <p id="ventaja2-desc">Drones, GPS y software innovador aplicados en cada proyecto topográfico.</p>
+        </article>
+        <article class="ventaja" tabindex="0" aria-labelledby="ventaja3-title" aria-describedby="ventaja3-desc">
+          <svg aria-hidden="true" class="ventaja-icon" viewBox="0 0 64 64" fill="#00cc44" xmlns="http://www.w3.org/2000/svg"><path d="M32 30a8 8 0 108 8 8.009 8.009 0 00-8-8zm0 14a6 6 0 116-6 6.006 6.006 0 01-6 6z"/><path d="M55.66 39.39L50 35.44V30a14 14 0 10-28 0v5.44l-5.66 3.95A2 2 0 0016 44v2h32v-2a2 2 0 00-2.34-1.61zM18 42.91l3.49-2.43V30a10 10 0 1120 0v10.48l3.49 2.43z"/></svg>
+          <h3 id="ventaja3-title">Atención Personalizada</h3>
+          <p id="ventaja3-desc">Asesoramiento dedicado y soluciones adaptadas a tus necesidades específicas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container contacto" id="contacto" role="region" aria-label="Formulario de contacto">
+      <h2>Contacto</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required autocomplete="email" />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta aquí..." required></textarea>
+
+        <button type="submit" aria-label="Enviar mensaje">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-content">
+      <p>GEOZAP &copy; 2025 | Todos los derechos reservados</p>
+      <p>Diseñado con pasión y precisión</p>
+      <nav aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook" class="social-link">Fb</a>
+        <a href="#" aria-label="Twitter" class="social-link">Tw</a>
+        <a href="#" aria-label="LinkedIn" class="social-link">Li</a>
+      </nav>
     </div>
-  </section>
-
-  <section class="container ventajas">
-    <h2>¿Por qué elegir GEOZAP?</h2>
-    <div class="ventajas-grid">
-      <div class="ventaja">
-        <h3>Alta Precisión</h3>
-        <p>Equipos modernos y técnicos especializados garantizan resultados exactos.</p>
-        <img src="img/images1.jpg" alt="Imagen de topografía 1" class="ventaja-img" />
-      </div>
-      <div class="ventaja">
-        <h3>Tecnología Avanzada</h3>
-        <p>Uso de drones, GPS y software de última generación para tus proyectos.</p>
-        <img src="img/objetivos.jpg" alt="Objetivos de la topografía" class="ventaja-img" />
-      </div>
-      <div class="ventaja">
-        <h3>Atención Personalizada</h3>
-        <p>Soluciones adaptadas a tus necesidades específicas con soporte continuo.</p>
-        <img src="img/topografia3.jpg" alt="Topografía en campo" class="ventaja-img" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container" id="contacto">
-    <h2>Contacto</h2>
-    <form class="contact-form" action="#" method="post">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
-
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta aquí..." required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    GEOZAP &copy; 2025 | Todos los derechos reservados
   </footer>
+
+  <script>
+    // Header color on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
