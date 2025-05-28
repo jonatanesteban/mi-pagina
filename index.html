@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GEOZAP - Presentación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>GEOZAP</h1>
+    <div class="container header-flex">
+      <img src="Logo/Logogeo.png" alt="Logo GEOZAP" class="logo-img" />
       <nav>
         <a href="#quienes-somos">Quiénes Somos</a>
         <a href="#servicios">Servicios</a>
@@ -17,6 +18,14 @@
       </nav>
     </div>
   </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Soluciones innovadoras para tu negocio</h1>
+      <p>Calidad, confianza y tecnología a tu alcance</p>
+      <a href="#contacto" class="btn">Contáctanos</a>
+    </div>
+  </section>
 
   <section id="quienes-somos" class="container">
     <h2>Quiénes Somos</h2>
@@ -37,9 +46,18 @@
 
   <section id="contacto" class="container">
     <h2>Contacto</h2>
-    <p>Teléfono: +54 9 1234 5678</p>
-    <p>Email: contacto@geozap.com</p>
-    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+    <form class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
