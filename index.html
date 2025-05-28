@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Página Web</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      PS C:\mi-pagina      padding: 20px;
-    }
-    h1 {
-      color: #007acc;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEOZAP - Presentación</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>¡Hola mundo!</h1>
-  <p>Esta es mi primera página web hecha con Visual Studio Code.</p>
+  <header>
+    <div class="container">
+      <h1>GEOZAP</h1>
+      <nav>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="quienes-somos" class="container">
+    <h2>Quiénes Somos</h2>
+    <p>
+      Somos una empresa dedicada a ofrecer soluciones innovadoras para tu negocio.
+      Nuestra misión es brindar calidad y confianza en cada proyecto.
+    </p>
+  </section>
+
+  <section id="servicios" class="container">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Consultoría profesional</li>
+      <li>Desarrollo de software a medida</li>
+      <li>Soporte técnico 24/7</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <p>Teléfono: +54 9 1234 5678</p>
+    <p>Email: contacto@geozap.com</p>
+    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GEOZAP. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
