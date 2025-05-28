@@ -1,6 +1,6 @@
 /* Banner con imagen de fondo */
 .banner {
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('img/drone.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('img/topografia0.jpg') center/cover no-repeat;
   color: #e0e0e0;
   padding: 80px 20px;
   text-align: center;
@@ -96,7 +96,7 @@
   box-shadow: 0 0 8px rgba(0,0,0,0.15);
 }
 
-/* Contact form y demás estilos (igual que antes) */
+/* Contact form */
 
 .contact-form label {
   display: block;
